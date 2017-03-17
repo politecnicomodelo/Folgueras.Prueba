@@ -1,4 +1,4 @@
-class alumnos(object)
+class alumno(object):
     nombre = " "
     apellido = " "
     FechaNaciemiento = None
@@ -9,5 +9,18 @@ class alumnos(object)
     def setApellido(self, Apellido):
         self.apellido = str (Apellido)
 
-    def setFechaN(self, Fecha):
-        self.FechaNaciemiento = str (Fecha)
+    def setFechaN(self, fecha):
+        self.FechaNaciemiento = fecha
+
+    def agregarNota(self, Nota):
+        self.ListaNotas.append(Nota)
+
+    def menorNota(self):
+        return min(self.ListaNotas)
+
+    def mayorNota(self):
+        return max(self.ListaNotas)
+
+    def promedioNota(self):
+        return sum(self.ListaNotas) / len(self.ListaNotas)
+
