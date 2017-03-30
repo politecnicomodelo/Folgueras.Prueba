@@ -8,7 +8,7 @@ class alumno(object):
     ListaNotasA = []
     ListaDeMaterias = []
 
-    def ___init___(self):
+    def __init__(self):
         self.ListaDeMaterias = []
 
 

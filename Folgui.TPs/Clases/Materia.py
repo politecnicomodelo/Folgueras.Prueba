@@ -4,8 +4,8 @@ class materias(object):
     ListaNotasM = []
 
 
-    def setNombre(self, Mate):
-        self.nombre = Mate
+    def setNombre(self, N):
+        self.nombre = str(N)
 
     def ___init___(self):
         self.ListaNotasM = []
