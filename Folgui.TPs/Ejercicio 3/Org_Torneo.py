@@ -15,6 +15,9 @@ Jugador6 = jugador()
 Equipo1 = Equipo()
 Equipo2 = Equipo()
 
+Torneo = Torneo()
+
+Partidos = Partido()
 
 #--------------------------------------------------------------- EQUIPO 1
 
@@ -64,10 +67,14 @@ Equipo2.Capitan_E(Jugador6)
 Equipo2.setTurno(5,1,True)
 Equipo2.setTurno(4,1,True)
 Equipo2.setTurno(3,1,True)
-j = 0
-i = 0
-while(i < 3 and j < 3):
-    print(Equipo1.Lista_Jugadores[i].Nombre)
-    print(Equipo2.Lista_Jugadores[j].Nombre)
-    i += 1
-    j += 1
+
+#----------------------------------------------------------------- GRAN TORNEO
+
+
+Torneo.Nombre("ElGranTorneo")
+Torneo.agregarEquipo(Equipo1)
+Torneo.agregarEquipo(Equipo2)
+
+#----------------------------------------------------------------- PARTIDO
+
+Partidos.
