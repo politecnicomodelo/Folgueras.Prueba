@@ -65,16 +65,29 @@ Equipo2.agregarJugador(Jugador5)
 Equipo2.agregarJugador(Jugador6)
 Equipo2.Capitan_E(Jugador6)
 Equipo2.setTurno(5,1,True)
-Equipo2.setTurno(4,1,True)
+Equipo2.setTurno(0,1,True)
 Equipo2.setTurno(3,1,True)
 
 #----------------------------------------------------------------- GRAN TORNEO
 
 
-Torneo.Nombre("ElGranTorneo")
+Torneo.Nombre_Torneo("ElGranTorneo")
 Torneo.agregarEquipo(Equipo1)
 Torneo.agregarEquipo(Equipo2)
 
 #----------------------------------------------------------------- PARTIDO
 
-Partidos.
+Partidos.Dia_P(date(2017,8,10))
+Partidos.setTurno(0,1,True)
+Partidos.Equipo1 = Equipo1
+Partidos.Equipo2 = Equipo2
+
+#----------------------------------------------------------------- MOSTRAR
+
+print(Torneo.Nombre)
+print("Equipos: ")
+print(Equipo1.Nombre,"y",Equipo2.Nombre)
+print("Del Barrio:")
+print(Equipo1.Barrio)
+print("Horario:")
+print(Partidos.Turno)
