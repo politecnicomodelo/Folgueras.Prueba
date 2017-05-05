@@ -1,11 +1,12 @@
+from .Personas import Persona
 
-class Alumno(object):
+class Alumno(Persona):
 
-    Nombre = ""
-    Apelldio = ""
-    Division = ""
-
-    def setAlumno(self, N, A, D):
-        self.Nombre = N
-        self.Apellido = A
+    def __init__(self, N, A, D):
+        Persona.__init__(self, N, A)
         self.Division = D
+
+    def ModAlumno(self, N = None, A = None, D = None):
+        Persona.ModAlumno(N, A)
+        if D:
+            self.Division = D

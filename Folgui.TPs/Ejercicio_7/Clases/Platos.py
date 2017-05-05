@@ -1,9 +1,12 @@
 
 class Platillos(object):
 
-    Nombre = ""
-    Precio = ""
-
-    def setPlatos(self, N, P):
+    def __init__(self, N, P):
         self.Nombre = N
         self.Precio = P
+
+    def Mod_Platillos(self, N = None, P = None):
+        if N:
+            self.Nombre = N
+        if P:
+            self.Precio = P
