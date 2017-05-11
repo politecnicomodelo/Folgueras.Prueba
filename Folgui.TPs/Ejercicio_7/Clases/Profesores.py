@@ -2,7 +2,7 @@ from .Personas import Persona
 
 class Profesor(Persona):
 
-    def __init__(self, N, A):
+    def __init__(self, N = None, A = None):
         Persona.__init__(self, N,A)
         self.Porcentaje_Descuento = 30
 
