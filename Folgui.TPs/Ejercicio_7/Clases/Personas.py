@@ -1,8 +1,8 @@
 class Persona(object):
 
-    def __init__(self, N, A):
-        self.Nombre = N
-        self.Apellido = A
+    def __init__(self, N = None, A = None):
+        self.Nombre = str(N)
+        self.Apellido = str(A)
 
     def getDescuento(self):
         return 0
