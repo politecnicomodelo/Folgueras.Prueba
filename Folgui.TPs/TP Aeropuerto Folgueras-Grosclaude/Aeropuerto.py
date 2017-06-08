@@ -12,8 +12,12 @@ Pilotos = []
 Aviones = []
 Vuelos = []
 
-def MostrarPasajeros(Vuelo):
-    for item in Vuelo.Pasajeros:
+def MostrarPasajeros(Vuelos):
+    '''Menu = ['Nombre','Apellido','FechaNacimiento','DNI']
+    print('{: >20} | {: >20} | {: >20} | {: >20}'.format(*Menu))
+    Guion = ['_','_','_','_']
+    print('{: >20}  {: >20}  {: >20}  {: >20}'.format(*Guion))'''
+    for item in Vuelos.Pasajeros:
         texto = [item.Nombre, item.Apellido, str(item.FechaNacimiento), item.Dni]
         print('{: >20} | {: >20} | {: >20} | {: >20}'.format(*texto))
 

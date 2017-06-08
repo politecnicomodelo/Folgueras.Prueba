@@ -20,7 +20,7 @@ class Vuelo(object):
     def PasajeroJoven(self):
         for item in self.Pasajeros:
             for item2 in self.Pasajeros:
-                if item2 != None and item != None:
+                if item2 is not None and item is not None:
                     if item.FechaNacimiento.year > item2.FechaNacimiento.year:
                         a = item
                     elif item.FechaNacimiento.year == item2.FechaNacimiento.year:
